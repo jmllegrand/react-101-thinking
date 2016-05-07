@@ -7,10 +7,11 @@ import React from 'react'
 
 class ProductRow extends React.Component {
   render() {
+    console.log('JM - ProductRow.render()');
     return (
-      <li>
-        <span>Football</span>
-        <span>$49.99</span>
+      <li className="product-row">
+        <span>{this.props.product.name}</span>
+        <span>{this.props.product.price}</span>
       </li>
     )
   }

@@ -4,11 +4,23 @@
 
 
 import React from 'react';
+import ProductRow from './ProductRow';
+
 
 class ProductCategoryRow extends React.Component {
-  render() {
+  static renderProduct(product) {
     return (
-      <ul>Sporting Goods</ul>
+      <ProductRow key={product.name} product={product} />
+    )
+  }
+
+  render() {
+    console.log('JM - ProductCategoryRow.render()');
+    return (
+      <ul className="product-row-category">
+        <span>{this.props.category}</span>
+        {_.map(this.props.productsFiltered, this.renderProduct)}
+      </ul>
     )
   }
 }

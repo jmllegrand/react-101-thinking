@@ -5,9 +5,10 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
-  render() {
+  static render() {
+    console.log('JM - ProductRow.SearchBar()');
     return (
-      <div>
+      <div className="search-bar">
         <input type="text" placeholder="Search ..."/> <br />
         <label><input type="checkbox"/>Only show products in stock </label>
       </div>
