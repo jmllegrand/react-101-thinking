@@ -8,10 +8,10 @@ class SearchBar extends React.Component {
   render() {
     console.log('JM - ProductRow.SearchBar()');
     return (
-      <div className="search-bar">
+      <form className="search-bar">
         <input type="text" placeholder="Search ..."/> <br />
         <label><input type="checkbox"/>Only show products in stock </label>
-      </div>
+      </form>
     )
   }
 }
