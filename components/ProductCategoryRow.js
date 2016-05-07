@@ -8,7 +8,7 @@ import ProductRow from './ProductRow';
 
 
 class ProductCategoryRow extends React.Component {
-  static renderProduct(product) {
+  renderProduct(product) {
     return (
       <ProductRow key={product.name} product={product} />
     )

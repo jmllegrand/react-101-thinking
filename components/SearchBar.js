@@ -5,7 +5,7 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
-  static render() {
+  render() {
     console.log('JM - ProductRow.SearchBar()');
     return (
       <div className="search-bar">
